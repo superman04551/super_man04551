@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>ex-3-2</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            text-align: center;
+        }
+
+        img.pokemon {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display-1"></div>
+
+
+    <script>
+        let pokemon1 = "pikachu.png";
+        let pokemon2 = "bulbasaur.png";
+        let pokemon3 = "charmander.png";
+        let pokemon4 = "squirtle.png";
+
+        let fragment1 = ""
+        for (i = 0; i < 4; i++) {
+            fragment1 += "<img class='pokemon' src ='" + pokemon1 + "' />"
+            if (i % 4 == 3) {
+                fragment1 += "<br>"
+            }
+        }
+        console.log(fragment1);
+        document.getElementById("display-1").innerHTML = fragment1;
+
+        let fragment2 = ""
+        for (i = 0; i < 4; i++) {
+            
+            
+
+            fragment2 += "<img class='pokemon' src ='" + pokemon2 + "' />"
+            if (i % 4 == 3) {
+                fragment2 += "<br>"
+            }
+        }
+        console.log(fragment2);
+        document.getElementById("display-2").innerHTML = fragment2;
+
+        let fragment3 = ""
+        for (i = 0; i < 4; i++) {
+            fragment3 += "<img class='pokemon' src ='" + pokemon3 + "' />"
+            if (i % 4 == 3) {
+                fragment3 += "<br>"
+            }
+        }
+        console.log(fragment3);
+        document.getElementById("display-3").innerHTML = fragment3;
+
+        let fragment4 = ""
+        for (i = 0; i < 4; i++) {
+            fragment4 += "<img class='pokemon' src ='" + pokemon4 + "' />"
+            if (i % 4 == 3) {
+                fragment4 += "<br>"
+            }
+        }
+        console.log(fragment4);
+        document.getElementById("display-4").innerHTML = fragment4;
+
+    </script>
+</body>
+
+</html>
